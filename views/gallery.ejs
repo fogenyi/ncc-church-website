@@ -1,0 +1,83 @@
+<div class="mb-4">
+  <h1 class="section-title"><i class="fas fa-images me-2 text-accent"></i>Photo Gallery</h1>
+  <hr class="section-divider" style="margin-left:0;">
+  <p class="text-muted">Browse photos from parish events, liturgy, and community life at NCC Parish.</p>
+</div>
+
+<!-- Category Filter -->
+<div class="mb-4 d-flex flex-wrap gap-2">
+  <button class="btn btn-primary-custom btn-sm">All Photos</button>
+  <button class="btn btn-outline-secondary btn-sm">Parish Events</button>
+  <button class="btn btn-outline-secondary btn-sm">Community</button>
+  <button class="btn btn-outline-secondary btn-sm">Liturgy</button>
+  <button class="btn btn-outline-secondary btn-sm">Youth</button>
+</div>
+
+<!-- Gallery Grid -->
+<div class="gallery-grid">
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Parish Picnic 2025">
+    <img src="https://via.placeholder.com/400x300/1a3a5c/ffffff?text=Parish+Picnic+2025" alt="Parish Picnic 2025" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Sunday Mass">
+    <img src="https://via.placeholder.com/400x300/c0392b/ffffff?text=Sunday+Mass" alt="Sunday Mass" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Youth Choir">
+    <img src="https://via.placeholder.com/400x300/2a5a8c/ffffff?text=Youth+Choir" alt="Youth Choir" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Christmas Nativity">
+    <img src="https://via.placeholder.com/400x300/d4a017/333333?text=Christmas+Nativity" alt="Christmas Nativity" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Easter Vigil">
+    <img src="https://via.placeholder.com/400x300/122840/ffffff?text=Easter+Vigil" alt="Easter Vigil" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Volunteer Day">
+    <img src="https://via.placeholder.com/400x300/27ae60/ffffff?text=Volunteer+Day" alt="Volunteer Day" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Youth Rally">
+    <img src="https://via.placeholder.com/400x300/8e44ad/ffffff?text=Youth+Rally" alt="Youth Rally" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: First Communion">
+    <img src="https://via.placeholder.com/400x300/e67e22/ffffff?text=First+Communion" alt="First Communion" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Food Drive">
+    <img src="https://via.placeholder.com/400x300/16a085/ffffff?text=Food+Drive" alt="Food Drive" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Corpus Christi Procession">
+    <img src="https://via.placeholder.com/400x300/2980b9/ffffff?text=Corpus+Christi" alt="Corpus Christi Procession" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Parish Retreat">
+    <img src="https://via.placeholder.com/400x300/c0392b/ffffff?text=Parish+Retreat" alt="Parish Retreat" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="gallery-item" tabindex="0" role="button" aria-label="View photo: Community Gathering">
+    <img src="https://via.placeholder.com/400x300/1a3a5c/ffffff?text=Community+Gathering" alt="Community Gathering" loading="lazy">
+    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="modal fade" id="galleryLightboxModal" tabindex="-1" aria-label="Photo Lightbox" aria-modal="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center p-0">
+        <img id="lightboxImg" src="" alt="" class="img-fluid w-100" style="max-height:70vh; object-fit:contain;">
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <span id="lightboxCaption" class="text-white-50 fst-italic small"></span>
+      </div>
+    </div>
+  </div>
+</div>

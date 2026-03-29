@@ -1,0 +1,420 @@
+/* ===========================
+   NCC Parish - Custom Styles
+   =========================== */
+
+:root {
+  --primary: #1a3a5c;
+  --primary-dark: #122840;
+  --primary-light: #2a5a8c;
+  --accent: #c0392b;
+  --accent-light: #e74c3c;
+  --gold: #d4a017;
+  --light-bg: #f8f9fa;
+  --text-muted-custom: #6c757d;
+}
+
+/* ---- Base ---- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  background-color: var(--primary) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+.navbar-brand i {
+  color: var(--gold) !important;
+}
+
+.nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--gold) !important;
+}
+
+/* ---- Announcement Banner ---- */
+.announcement-banner {
+  background-color: var(--accent);
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.announcement-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ---- Hero Section ---- */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, #0d1f33 100%);
+  color: #fff;
+  padding: 5rem 2rem;
+  margin: -3rem -12px 3rem -12px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.hero-section p.lead {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  position: relative;
+}
+
+.hero-section .btn-hero-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.hero-section .btn-hero-primary:hover {
+  background-color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.hero-section .btn-hero-outline {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.hero-section .btn-hero-outline:hover {
+  background-color: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+}
+
+/* ---- Section headings ---- */
+.section-title {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-divider {
+  border: none;
+  height: 3px;
+  width: 60px;
+  background: var(--accent);
+  margin: 0 auto 2rem auto;
+}
+
+/* ---- Cards ---- */
+.card {
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+}
+
+.card-header-primary {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+/* ---- Mass Schedule ---- */
+.mass-schedule-section {
+  background: var(--light-bg);
+  padding: 3rem 0;
+  margin: 2rem -12px;
+}
+
+.mass-card {
+  background: #fff;
+  border-left: 5px solid var(--primary);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mass-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.mass-card .day-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.mass-card .time-label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* ---- Mass Intentions Table ---- */
+.intention-table th {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.intention-table td {
+  vertical-align: middle;
+}
+
+.badge-living {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.badge-deceased {
+  background-color: var(--text-muted-custom);
+  color: #fff;
+}
+
+/* ---- Gallery ---- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s, filter 0.3s;
+  display: block;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.07);
+  filter: brightness(0.8);
+}
+
+.gallery-item .gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 58, 92, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Admin Dashboard ---- */
+.admin-stat-card {
+  border-left: 5px solid var(--primary);
+  border-radius: 8px;
+}
+
+.admin-stat-card.accent {
+  border-left-color: var(--accent);
+}
+
+.admin-stat-card.gold {
+  border-left-color: var(--gold);
+}
+
+.admin-stat-card.green {
+  border-left-color: #27ae60;
+}
+
+.admin-stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+/* ---- Ministry icons ---- */
+.ministry-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 1rem auto;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.card:hover .ministry-icon {
+  background-color: var(--accent);
+  transform: scale(1.08);
+}
+
+/* ---- Event date badge ---- */
+.event-date-badge {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  min-width: 60px;
+}
+
+.event-date-badge .event-day {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.event-date-badge .event-month {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ---- Buttons ---- */
+.btn-primary-custom {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+  color: #fff;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-light);
+  border-color: var(--accent-light);
+  color: #fff;
+}
+
+/* ---- Announcement cards ---- */
+.announcement-card {
+  border-top: 4px solid var(--gold);
+}
+
+/* ---- Contact info ---- */
+.contact-info-box {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.contact-info-box a {
+  color: rgba(255,255,255,0.8);
+}
+
+.contact-info-box a:hover {
+  color: #fff;
+}
+
+/* ---- Responsive hero ---- */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* ---- Footer ---- */
+footer {
+  background-color: var(--primary-dark) !important;
+}
+
+footer a:hover {
+  color: var(--gold) !important;
+}
+
+/* ---- Utility ---- */
+.text-primary-custom { color: var(--primary) !important; }
+.text-accent { color: var(--accent) !important; }
+.bg-primary-custom { background-color: var(--primary) !important; }
+.bg-accent { background-color: var(--accent) !important; }

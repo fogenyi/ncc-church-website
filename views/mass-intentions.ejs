@@ -1,0 +1,161 @@
+<div class="mb-4">
+  <h1 class="section-title"><i class="fas fa-pray me-2 text-accent"></i>Mass Intentions</h1>
+  <hr class="section-divider" style="margin-left:0;">
+  <p class="text-muted">A Mass intention is a prayer offered for a specific person or purpose at Mass. Submit a request below or view the current week's schedule.</p>
+</div>
+
+<!-- Current Week Schedule -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold text-primary-custom mb-3">
+    <i class="fas fa-calendar-week me-2"></i>This Week's Mass Intentions
+  </h2>
+  <div class="table-responsive">
+    <table class="table table-hover intention-table">
+      <thead>
+        <tr>
+          <th>Day &amp; Date</th>
+          <th>Time</th>
+          <th>Intention</th>
+          <th>Type</th>
+          <th>Offered By</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Sunday</strong><br><small class="text-muted">Jul 6</small></td>
+          <td>8:00 AM</td>
+          <td>For the repose of the soul of Margaret O'Brien</td>
+          <td><span class="badge badge-deceased">Deceased</span></td>
+          <td>The O'Brien Family</td>
+        </tr>
+        <tr>
+          <td><strong>Sunday</strong><br><small class="text-muted">Jul 6</small></td>
+          <td>10:00 AM</td>
+          <td>For the health &amp; recovery of Thomas Rivera</td>
+          <td><span class="badge badge-living">Living</span></td>
+          <td>Rivera Family</td>
+        </tr>
+        <tr>
+          <td><strong>Sunday</strong><br><small class="text-muted">Jul 6</small></td>
+          <td>12:00 PM</td>
+          <td>For the intentions of all parishioners</td>
+          <td><span class="badge badge-living">Living</span></td>
+          <td>Parish</td>
+        </tr>
+        <tr>
+          <td><strong>Monday</strong><br><small class="text-muted">Jul 7</small></td>
+          <td>7:00 AM</td>
+          <td>In memory of Joseph Nguyen</td>
+          <td><span class="badge badge-deceased">Deceased</span></td>
+          <td>Nguyen Family</td>
+        </tr>
+        <tr>
+          <td><strong>Tuesday</strong><br><small class="text-muted">Jul 8</small></td>
+          <td>7:00 AM</td>
+          <td>For the souls in Purgatory</td>
+          <td><span class="badge badge-deceased">Deceased</span></td>
+          <td>Anonymous</td>
+        </tr>
+        <tr>
+          <td><strong>Wednesday</strong><br><small class="text-muted">Jul 9</small></td>
+          <td>7:00 AM</td>
+          <td>For Sarah Mitchell's birthday blessings</td>
+          <td><span class="badge badge-living">Living</span></td>
+          <td>Mitchell Family</td>
+        </tr>
+        <tr>
+          <td><strong>Thursday</strong><br><small class="text-muted">Jul 10</small></td>
+          <td>7:00 AM</td>
+          <td>In loving memory of Elena Kowalski</td>
+          <td><span class="badge badge-deceased">Deceased</span></td>
+          <td>Kowalski Family</td>
+        </tr>
+        <tr>
+          <td><strong>Friday</strong><br><small class="text-muted">Jul 11</small></td>
+          <td>7:00 AM</td>
+          <td>For peace in the world</td>
+          <td><span class="badge badge-living">Living</span></td>
+          <td>Parish</td>
+        </tr>
+        <tr>
+          <td><strong>Saturday</strong><br><small class="text-muted">Jul 12</small></td>
+          <td>5:30 PM</td>
+          <td>For the healing of Daniel Thompson</td>
+          <td><span class="badge badge-living">Living</span></td>
+          <td>Thompson Family</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Request Form -->
+<section>
+  <h2 class="h5 fw-bold text-primary-custom mb-3">
+    <i class="fas fa-edit me-2"></i>Request a Mass Intention
+  </h2>
+  <div class="card">
+    <div class="card-body">
+      <p class="text-muted small mb-4">
+        <i class="fas fa-info-circle me-1"></i>
+        Mass intention offerings are $10 per Mass. Please contact the parish office to arrange payment after submitting your request.
+      </p>
+      <form class="needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="requesterName" class="form-label fw-semibold">Your Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="requesterName" placeholder="Your full name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="requesterEmail" class="form-label fw-semibold">Your Email <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="requesterEmail" placeholder="you@email.com" required>
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="intentionName" class="form-label fw-semibold">Name for Intention <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="intentionName" placeholder="Name of person" required>
+            <div class="invalid-feedback">Please enter the name for the intention.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Type of Intention <span class="text-danger">*</span></label>
+            <div class="d-flex gap-4 mt-1">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="intentionType" id="typeLiving" value="living" required>
+                <label class="form-check-label" for="typeLiving">Living</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="intentionType" id="typeDeceased" value="deceased">
+                <label class="form-check-label" for="typeDeceased">Deceased (R.I.P.)</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="preferredDate" class="form-label fw-semibold">Preferred Date</label>
+            <input type="date" class="form-control" id="preferredDate">
+          </div>
+          <div class="col-md-6">
+            <label for="preferredMass" class="form-label fw-semibold">Preferred Mass Time</label>
+            <select class="form-select" id="preferredMass">
+              <option value="">Any available</option>
+              <option>Sunday 8:00 AM</option>
+              <option>Sunday 10:00 AM</option>
+              <option>Sunday 12:00 PM</option>
+              <option>Weekday 7:00 AM</option>
+              <option>Saturday 5:30 PM (Vigil)</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="intentionMessage" class="form-label fw-semibold">Additional Message</label>
+            <textarea class="form-control" id="intentionMessage" rows="3" placeholder="Any additional details or special requests..."></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary-custom">
+              <i class="fas fa-paper-plane me-1"></i>Submit Request
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
